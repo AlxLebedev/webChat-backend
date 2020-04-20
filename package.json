@@ -1,0 +1,26 @@
+{
+  "name": "hw-8-2-backend",
+  "version": "1.0.0",
+  "description": "server for WebChat",
+  "main": "server.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "author": "Alexey Lebedev",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^2.0.0",
+    "http-event-stream": "^0.2.0",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "uuid": "^3.4.0",
+    "ws": "^7.2.1"
+  }
+}
